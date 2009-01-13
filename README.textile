@@ -1,0 +1,23 @@
+h1. Office Party
+
+A web UI for iTunes built with Rails + Shoes, cooked up by "James MacAulay":http://jmacaulay.net.
+
+h4. You need
+
+"Shoes":http://shoooes.net/
+
+h4. Usage
+
+Run office_party.rb as a Shoes app in the normal fashion. You get a scrolling log window and a script/console window. Then hit "this guy":http://localhost:3000/itunes/playpause a bunch of times and be amazed!
+
+h4. Things you should be able to do, but can't for some reason
+
+* Run it in Windows: it freezes at "Booting WEBrick..."
+* Package it into a working DMG or EXE: Shoes' DMG packager doesn't seem to be able to handle this size of project, and the EXEs it creates end up throwing an error for some reason. SHY packages can be made just fine though.
+
+h4. Things to come
+
+Maybe something other than just a few controller actions...?
+
+Right now this is really just an overly-cumbersome wrapper around Kai Steinbach's rb-itunes; something like this, as it is right now, would really have been better made with e.g. Sinatra over Rails. But I plan on turning Office Party into a bigger project over time, so I'm using Rails and that's that.
+
