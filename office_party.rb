@@ -80,7 +80,14 @@ $stdout = StringIO.new
 $stderr = StringIO.new
 
 Shoes.setup do
+  # begin
   gem 'rack >= 0.9.0'
+  gem 'activesupport >= 2.2.2'
+  # gem 'actionmailer >= 2.2.2'
+  # gem 'activeresource >= 2.2.2'
+  gem 'actionpack >= 2.2.2'
+  gem 'activerecord >= 2.2.2'
+  gem 'rails >= 2.2.2'
   gem 'sqlite3-ruby'
   unless RUBY_PLATFORM =~ /(win|w)32$/
     gem 'rb-appscript'
@@ -91,6 +98,10 @@ Shoes.setup do
   Thread.new do
     require 'commands/server'
   end
+  # rescue ArgumentError => e
+  #   Shoes.debug Gem::RubyGemsVersion.inspect
+  #   Shoes.debug e.message + "\n" + e.backtrace.inspect
+  # end
 end
 
 Shoes.app do
