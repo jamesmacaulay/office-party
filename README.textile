@@ -1,19 +1,24 @@
 h1. Office Party
 
-A web UI for iTunes built with Rails + Shoes, cooked up by "James MacAulay":http://jmacaulay.net.
+An iTunes web UI built with Rails & Shoes, cooked up by "James MacAulay":http://jmacaulay.net.
 
 h4. You need
 
-"Shoes":http://shoooes.net/
+"OS X":http://www.apple.com/macosx/
 
-h4. Usage
+Hopefully will be working on Windows sometime soon.
 
-Run office_party.rb as a Shoes app in the normal fashion. You get a scrolling log window and a script/console window. Then hit "this guy":http://localhost:3000/itunes/playpause a bunch of times and be amazed!
+h4. Installation and usage
+
+Mount office_party.dmg (found in ./bin) and drag OfficeParty.app to your Applications folder (or anywhere, really) and start it up.
+
+Shoes downloads itself automatically if you don't already have it, along with the necessary rubygems. The app's databases and logs are stored in @~/.office_party@ .
+
+After launching the app, you get a scrolling log window and a script/console window. Then hit "this guy":http://localhost:3000/itunes/playpause a bunch of times and be amazed!
 
 h4. Things you should be able to do, but can't for some reason
 
 * Run it in Windows: it freezes at "Booting WEBrick..."
-* Package it into a working DMG or EXE: Shoes' DMG packager doesn't seem to be able to handle this size of project, and the EXEs it creates end up throwing an error for some reason. SHY packages can be made just fine though.
 
 h4. Things to come
 
