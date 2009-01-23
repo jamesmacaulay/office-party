@@ -2,6 +2,7 @@ class ItunesController < ApplicationController
   
   def index
     @current_track = itunes.current_track
+    @upcoming_tracks = itunes.current_playlist.tracks[1..-1]
   end
   
   def play

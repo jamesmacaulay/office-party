@@ -15,7 +15,6 @@ class ApplicationController < ActionController::Base
   
   protected
   
-  
   def itunes
     Itunes.app
   end
