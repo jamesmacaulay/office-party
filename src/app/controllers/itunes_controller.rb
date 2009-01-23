@@ -1,4 +1,9 @@
 class ItunesController < ApplicationController
+  
+  def index
+    @current_track = itunes.current_track
+  end
+  
   def play
     itunes.play
     head :ok

@@ -1,0 +1,7 @@
+#current-track
+  %h1= @current_track.name
+  %h2= @current_track.artist
+%ul#controls
+  %li= link_to_remote 'play', :url => {:action => 'play'}
+  %li= link_to_remote 'pause', :url => {:action => 'pause'}
+  %li= link_to_remote 'next track', :url => {:action => 'next'}
